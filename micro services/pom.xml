@@ -14,9 +14,8 @@
     <name>micro services</name>
     <description>micro services</description>
     <properties>
-        <java.version>17</java.version>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+            <maven.compiler.target>1.8</maven.compiler.target>
+            <maven.compiler.source>1.8</maven.compiler.source>
     </properties>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-ui -->
@@ -67,7 +66,8 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <optional>true</optional>
+            <version>1.18.24</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -90,6 +90,7 @@
                     </excludes>
 
                 </configuration>
+
 
             </plugin>
         </plugins>
